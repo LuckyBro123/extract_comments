@@ -9,7 +9,7 @@ function extractRussianComments($filePath) {
     $comments = [];
     
     // HTML комментарии <!-- ... -->
-    preg_match_all('/<!--[\s\S]*?-->/u', $content, $htmlComments);
+    preg_match_all('/<!--[\s\S]*?-->/u', $content, $htmlComments); 
     
     // JS/PHP однострочные // ...
     preg_match_all('/\/\/[ ]*[А-Яа-яЁё].*$/mu', $content, $singleLine);
